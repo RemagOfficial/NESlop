@@ -49,6 +49,19 @@ them so the emulator can run them.
 
 ---
 
+## Nintendo home console emulators
+
+This tracks the Nintendo home consoles I've built emulators for, from the NES up to the GameCube.
+A ticked entry links to the repository for that emulator (this repo for the NES); unticked entries
+are consoles I have not emulated yet.
+
+- [x] **Nintendo Entertainment System / Famicom** (NES, 1983) — [this repository](https://github.com/RemagOfficial/NESlop)
+- [ ] **Super Nintendo Entertainment System / Super Famicom** (SNES, 1990)
+- [ ] **Nintendo 64** (N64, 1996)
+- [ ] **Nintendo GameCube** (GameCube, 2001)
+
+---
+
 ## Getting your ROMs running
 
 There are two ways to feed the emulator a game. You only need the **runtime loader** for casual play;
