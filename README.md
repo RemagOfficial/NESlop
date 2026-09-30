@@ -39,6 +39,8 @@ them so the emulator can run them.
 * **Mapper support:**
   * **Mapper 0 (NROM)** — Super Mario Bros., most early titles.
   * **Mapper 4 (MMC3)** — Super Mario Bros. 3 and many later Nintendo games.
+  * Support is partial and still maturing: a game on even these mappers may render incorrectly or
+    crash where the emulation isn't accurate yet. Other mappers are not implemented.
 * **Controllers** — on-screen D-pad + A/B/Start/Select, keyboard fallbacks, and Bluetooth/USB gamepads
   with fully remappable buttons.
 * **Save states** — one snapshot per game, restore-safe across launches (see
@@ -64,9 +66,10 @@ Mario Bros. 3 that are *not* baked into the app.
 The chosen ROM boots immediately on a fresh machine. Nothing about this method requires a rebuild, so
 you can switch between as many games as you like.
 
-> The compatibility warning shown before the picker mentions that the emulator is "primarily NROM".
-> MMC3 (mapper 4) is supported too, so cartridges like SMB3 will run; other exotic mappers are not
-> implemented and are unlikely to work.
+> The compatibility warning shown before the picker reflects reality: the emulator supports NROM
+> (mapper 0) and MMC3 (mapper 4) cartridges, but that support is partial and still maturing. Even a
+> game on a supported mapper may render incorrectly or crash, because some hardware behaviours aren't
+> yet emulated accurately. Mappers beyond 0 and 4 are not implemented and will not work.
 
 ### Option 2 — Add built-in assets (recompile required)
 

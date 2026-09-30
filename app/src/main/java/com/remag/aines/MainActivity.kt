@@ -622,7 +622,7 @@ fun CustomRomWarningDialog(
         onDismissRequest = onDismiss,
         title = { Text("Load Custom ROM") },
         text = {
-            Text("Warning: This emulator is basic and primarily supports standard NROM (mapper 0) games. Loading other mappers or complex games will likely not work or cause crashes. Proceed?")
+            Text("Warning: This emulator supports NROM (mapper 0) and MMC3 (mapper 4) cartridges, but support is partial and still maturing. Even games that use a supported mapper may not run correctly - or may crash - because some hardware behaviours are not yet emulated accurately. Proceed?")
         },
         confirmButton = {
             Button(onClick = {
