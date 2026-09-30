@@ -16,3 +16,4 @@
 local.properties
 /smb3_trace/*
 /.artifacts/*
+test_rom_readme.md
